@@ -4,6 +4,46 @@
 
 </div>
 
+## 🚀 New Pluggable Architecture
+
+We've introduced a new pluggable architecture to make Continue more modular and extensible. Key features include:
+
+- **Core Plugin System**: A robust plugin interface for extending functionality
+- **Modular Design**: Each component (GUI, Binary, Extensions) is now a separate plugin
+- **Simplified Development**: Easier to develop and test components in isolation
+- **Better Dependency Management**: Improved dependency management with npm workspaces
+
+### Getting Started with Plugins
+
+1. **Install Dependencies**
+   ```bash
+   npm install
+   ```
+
+2. **Start Development Server**
+   ```bash
+   npm run dev
+   ```
+
+3. **Build for Production**
+   ```bash
+   npm run build
+   ```
+
+4. **Run the Application**
+   ```bash
+   npm start
+   ```
+
+### Creating a New Plugin
+
+1. Create a new directory in `packages/` for your plugin
+2. Implement the `IPlugin` interface from `@continuedev/core`
+3. Register your plugin in the main application
+4. Build and test your plugin
+
+For more details, see our [plugin development guide](docs/plugins/README.md).
+
 <h1 align="center">Continue</h1>
 
 <div align="center">
