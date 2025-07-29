@@ -37,7 +37,10 @@
     "vite": "^5.0.12"
   },
   "dependencies": {
-    "@continuedev/core": "workspace:*",
-    "@continuedev/gui": "workspace:*"
-  }
+    "@continuedev/core": "file:./packages/core",
+    "@continuedev/gui": "file:./packages/gui"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
 }
